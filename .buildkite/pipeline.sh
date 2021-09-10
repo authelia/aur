@@ -11,7 +11,7 @@ steps:
       - "docker build --tag ${REPOSITORY}:${TAG} --no-cache=true --pull=true ."
       - "docker push ${REPOSITORY}:${TAG}"
     concurrency: 1
-    concurrency_group: "deployments"
+    concurrency_group: "aurpackager-deployments"
     agents:
       upload: "fast"
 
