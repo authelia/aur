@@ -15,8 +15,8 @@ RUN \
    pacman -Sy && \
    pacman -S git pacman-contrib sudo --noconfirm && \
    sed -i 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers && \
-   sudo -u build git clone https://aur.archlinux.org/makedeb-alpha.git && \
-   cd makedeb-alpha && \
+   sudo -u build git clone https://aur.archlinux.org/makedeb.git && \
+   cd makedeb && \
    sudo -u build makepkg -si --noconfirm && \
  echo "**** Cleanup ****" && \
    rm -rf /tmp/*
