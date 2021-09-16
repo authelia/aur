@@ -7,7 +7,7 @@ TAG="latest"
 cat << EOF
 steps:
   - label: ":docker: Build and Deploy"
-    command: "docker build --tag ${REPOSITORY}:${TAG} --no-cache --pull --push ."
+    command: "docker build --tag ${REPOSITORY}:${TAG} --pull --push ."
     concurrency: 1
     concurrency_group: "aurpackager-deployments"
     agents:
