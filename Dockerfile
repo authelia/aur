@@ -16,9 +16,6 @@ RUN \
     pacman -Sy && \
     pacman -S git pacman-contrib --noconfirm && \
     sed -i 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/' /etc/sudoers && \
-    sudo -u build git clone https://aur.archlinux.org/makedeb-makepkg.git && \
-    cd makedeb-makepkg && \
-    sudo -u build makepkg -si --noconfirm && \
     sudo -u build git clone https://aur.archlinux.org/makedeb.git && \
     cd makedeb && \
     sudo -u build makepkg -si --noconfirm && \
