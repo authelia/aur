@@ -31,16 +31,8 @@ docker run \
   bash -c "cd /build && makepkg --printsrcinfo >| .SRCINFO"
 ```
 
-```
-docker run \
-  --rm \
-  --name=aurpackager \
-  -v <path to data>/authelia:/build \
-  authelia/aurpackager \
-  bash -c "cd /build && makedeb"
-```
-
 ## Version
+- **22/04/2022:** Remove makedeb
 - **08/12/2021:** Remove makedeb-makepkg
 - **16/09/2021:** Update for buildx usage
 - **10/09/2021:** Replace makedeb-alpha with makedeb and add Buildkite configuration
