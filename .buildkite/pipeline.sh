@@ -16,7 +16,9 @@ steps:
   - wait
 
   - label: ":docker: Update README.md"
-    command: "curl \"https://ci.nerv.com.au/readmesync/update?github_repo=${REPOSITORY}&dockerhub_repo=${REPOSITORY}\""
+    commands:
+    - "set"
+    - "curl \"https://ci.nerv.com.au/readmesync/update?github_repo=${REPOSITORY}&dockerhub_repo=${REPOSITORY}\""
     agents:
       upload: "fast"
 EOF
