@@ -1,4 +1,4 @@
-[logo]: https://github.com/authelia/authelia/raw/master/docs/images/authelia-title.png "Authelia"
+[logo]: https://www.authelia.com/images/branding/title.png "Authelia"
 [![alt text][logo]](https://www.authelia.com/)
 
 # authelia/aurpackager
@@ -32,6 +32,7 @@ docker run \
 ```
 
 ## Version
+- **17/10/2024:** Add Provenance and SBOM attestations
 - **22/04/2022:** Remove makedeb
 - **08/12/2021:** Remove makedeb-makepkg
 - **16/09/2021:** Update for buildx usage
